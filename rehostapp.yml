@@ -1,0 +1,8 @@
+version: 1
+
+label: '<username>.personal.template-static-site'
+urls:
+  - "<username>.personal.static-site:80"
+app_type: 'docker-compose'
+machines:
+  - "<username>.personal.vm"
