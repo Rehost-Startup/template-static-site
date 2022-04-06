@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  template_staticsite:
+    image: template_staticsite
+    ports:
+      - 80:8000
+    command: "python -m http.server 8000" 
+    build:
+      context: .
+      dockerfile: Dockerfile    
+    volumes:
+      - ./:/home/app

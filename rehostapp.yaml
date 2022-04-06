@@ -1,0 +1,8 @@
+version: 1
+
+label: 'svr8.personal.template-static-site'
+urls:
+  - "template.static-site:80"
+app_type: 'docker-compose'
+machines:
+  - "svr8.personal.g14"
