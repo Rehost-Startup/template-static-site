@@ -57,9 +57,7 @@ machines:
 ```
 Here, replace `<username>` with your Rehost Username, and `<team_name>` with the name of a team you created.
 
-3. On your VM instance, create a new file named `rehostmachine.yml` with the following content: 
-
-Next, run `rh machine up` to connect your VM instance to Rehost.
+3. On your VM instance, run `rh machine up` to connect your VM instance to Rehost. Enter a new machine name when prompted.
 
 4. Finally, run the following command on local machine to deploy the project:
 ```
