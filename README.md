@@ -48,24 +48,18 @@ git clone https://github.com/Rehost-Startup/template-static-site.git
 ```
 version: 1
 
-label: '<username>.personal.template-static-site'
+label: '<username>/<team_name>/template-static-site'
 urls:
-  - "<username>.personal.static-site:80"
+  - "<username>-<team_name>-static-site:80"
 app_type: 'docker-compose'
 machines:
-  - "<username>.personal.vm"
+  - "<username>/<team_name>/<machine_name>"
 ```
-Here, replace `<username>` with your Rehost Username.
+Here, replace `<username>` with your Rehost Username, and `<team_name>` with the name of a team you created.
 
 3. On your VM instance, create a new file named `rehostmachine.yml` with the following content: 
-```
-version: 1
 
-label: '<username>.personal.gcp'
-memory: '2gb'
-disk: '256gb'
-``` 
-Next, run `rh machine save` followed by `rh machine up` to connect your VM instance to Rehost.
+Next, run `rh machine up` to connect your VM instance to Rehost.
 
 4. Finally, run the following command on local machine to deploy the project:
 ```
