@@ -46,8 +46,6 @@ git clone https://github.com/Rehost-Startup/template-static-site.git
 ```
 2. Edit `rehostapp.yml` file:
 ```
-version: 1
-
 label: '<username>/<team_name>/template-static-site'
 urls:
   - "<username>-<team_name>-static-site:80"
